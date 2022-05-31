@@ -20,7 +20,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://soulemanou-software.github.io/capstone--pro--1)
+[Live Demo Link](https://soulemanou-software.github.io/Capstone--pro--1/)
 
 
 ## Getting Started
