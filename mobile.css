@@ -1,4 +1,15 @@
+@font-face {
+    font-family: coco;
+    src: url(resources/fonts/cocogoose-pro.regular.ttf);
+}
 *{
     padding: 0px;
     margin: 0px;
+}
+/*font-family: 'Inter', sans-serif;
+font-family: 'Lato', sans-serif;*/
+@media (max-width= "768px") {
+    
+
+
 }
