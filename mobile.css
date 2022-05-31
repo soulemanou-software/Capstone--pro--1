@@ -9,7 +9,10 @@
 /*font-family: 'Inter', sans-serif;
 font-family: 'Lato', sans-serif;*/
 @media (max-width= "768px") {
-    
+    *{
+        padding: 0px;
+        margin: 0px;
+    }  
 
 
 }
