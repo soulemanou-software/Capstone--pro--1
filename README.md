@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name: Capstone for tech company 
+# Project Name: Capstone for Tech company (FASTDEVZ) 
 
 > Description the project.
 >This project shows all my abilities as a software developer  and also as a frontEnd developer 
