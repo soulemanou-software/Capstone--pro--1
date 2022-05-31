@@ -10,17 +10,17 @@
 - Major languages
     1. *html*
     2. *css*
+    3. *javascript*
 - Frameworks
 
 - Technologies used
     1. *browser*
-    2. *html,css*
-    3. *figma tools*
+    2. *html,css,javascript *
 
 
 ## Live Demo
 
-[Live Demo Link](https://soulemanou-software.github.io/)
+[Live Demo Link](https://soulemanou-software.github.io/capstone--pro--1)
 
 
 ## Getting Started
