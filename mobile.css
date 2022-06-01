@@ -124,3 +124,34 @@ nav> :nth-child(2){
     padding: 0%;
     text-align: start;
 }
+/*ending ofg the headlines styling*/
+#main-program{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    background-image: url(Resources/images/pattern-bg.png);
+    background-color: var(--bg-color);
+    background-repeat: repeat;
+    background-position: center center;
+    height: auto;
+    padding-top: 5%;
+}
+#main-program> .main-program-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--forground-bg-color);
+
+}
+#main-program> .main-program-heading > .line{
+    width:12vw;
+    margin-top: 2%;
+    background-color: var(--text-color);
+    height: .3vw;
+    border-radius: 10px;
+}
+#main-program> .main-program-heading> h3{
+    font-family: 'lato',sans-serif;
+    font-weight: 500;
+}
