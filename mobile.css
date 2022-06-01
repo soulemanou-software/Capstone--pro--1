@@ -1,6 +1,6 @@
 @font-face {
     font-family: coco;
-    src: url(resources/fonts/cocogoose-pro.regular.ttf);
+    src: url(resources/fonts/cocogoose-pro-regular.woff);
 }
 :root{
     --text-color: #ec5242;
@@ -100,10 +100,21 @@ nav> :nth-child(2){
     text-align: start;
 }
 #headlines :nth-child(3){
+    font-family: 'lato', sans-serif;
+    line-height: 5vw;
+    text-kashida-space: 15vw;
     background-color: var(--forground-bg-color);
     padding: 5%;
     font-size: 3vw;
     border: .5vw solid var(--forground-bg-color1);
     text-align: start;
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    word-spacing: .5vw;
+}
+#headlines :nth-child(4){
+    font-family: coco;
+    font-weight: 900;
+    font-size: 4vw;
+    padding: 5% 0%;
+
 }
