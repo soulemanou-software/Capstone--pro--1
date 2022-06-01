@@ -2,6 +2,12 @@
     font-family: coco;
     src: url(resources/fonts/cocogoose-pro.regular.ttf);
 }
+:root{
+    --text-color: #ec5242;
+    --bg-color: #272a31;
+    --forground-bg-color: #eeeeee;
+    --forground-bg-color1: #ffffff;
+}
 *{
     padding: 0px;
     margin: 0px;
@@ -11,29 +17,30 @@ font-family: 'Lato', sans-serif;*/
 /* logo area */
 #nav{
     display:flex;
-   justify-content:center;
-   position: sticky;
-   align-items: center;
+    justify-content:center;
+    position: fixed;
     width: 100%;
-    height: 3rem;
+    height: 14vw;
+    margin-bottom: 0;
+    background: #fff; opacity: 0.75;
     border: none;
-    margin-bottom: 3rem;
-    background: transparent;
-    /*box-shadow: 2px 2px 20px 1px;*/
+    box-shadow: inset 0px 12px 18px -7px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
 }
 nav> a{
     display:flex;
     justify-content:center;
     align-items: center;
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
     
 }
 nav{
    display:flex;
    justify-content:space-between;
+   flex: content;
    flex-direction:row;
-   padding: 3rem 0rem 1rem 1rem; 
+   padding: 0%;
+   margin: 0%; 
    width:auto;
    height: auto;
 }
@@ -47,14 +54,56 @@ nav> .logo{
     width: auto;
 }
 nav> .logo> img{
-    width: 150px;
-    height: 50px;
-    margin: 0;
-    padding: 0rem 0rem;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    margin: 12% 0 0 0;
+    padding: 0%;
 }
 
 nav> :nth-child(2){
-    width: 20%;
-    height: 20%;
+    width: 18vw;
+    height: 18vw;
 }
 /*end of nav bar design here*/
+#headlines{
+ padding: 12% 5% 0% 5%; 
+ display: block;  
+ margin: 0%;
+ background-image: url(Resources/images/mobile-hero-bg.png);
+ background-repeat: no-repeat;
+ background-size: cover;
+
+}
+#headlines > :nth-child(1){
+    padding: 10% 0% 0% 0%;
+    font-size: 5vw;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    color: var(--text-color);
+    text-align: start;
+}
+#headlines :nth-child(2){
+    font-family: coco;
+    box-sizing: border-box;
+    font-size: 7vw;
+    font-weight: 900;
+    background-image: url(Resources/images/text--2bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    padding-bottom: 5%;
+    text-align: start;
+}
+#headlines :nth-child(3){
+    background-color: var(--forground-bg-color);
+    padding: 5%;
+    font-size: 3vw;
+    border: .5vw solid var(--forground-bg-color1);
+    text-align: start;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
