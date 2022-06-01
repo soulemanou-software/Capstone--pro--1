@@ -69,7 +69,7 @@ nav> :nth-child(2){
 }
 /*end of nav bar design here*/
 #headlines{
- padding: 12% 5% 0% 5%; 
+ padding: 12% 5% 18% 5%; 
  display: block;  
  margin: 0%;
  background-image: url(Resources/images/mobile-hero-bg.png);
@@ -104,17 +104,23 @@ nav> :nth-child(2){
     line-height: 5vw;
     text-kashida-space: 15vw;
     background-color: var(--forground-bg-color);
-    padding: 5%;
+    padding: 4%;
     font-size: 3vw;
-    border: .5vw solid var(--forground-bg-color1);
+    border: 1vw solid var(--forground-bg-color1);
     text-align: start;
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
     word-spacing: .5vw;
 }
 #headlines :nth-child(4){
     font-family: coco;
-    font-weight: 900;
+    font-weight: 500;
+    font-size: 5vw;
+    padding: 3% 0% 0% 0%;
+}
+#headlines :nth-child(5){
+    font-family: 'lato',sans-serif;
+    font-weight: 400;
     font-size: 4vw;
-    padding: 5% 0%;
-
+    padding: 0%;
+    text-align: start;
 }
