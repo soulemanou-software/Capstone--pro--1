@@ -5,8 +5,9 @@
 :root{
     --text-color: #ec5242;
     --bg-color: #272a31;
+    --bg-color1: rgba(158, 160, 161, 0.192);
     --forground-bg-color: #eeeeee;
-    --forground-bg-color1: #ffffff;
+    --forground-bg-color1: rgba(255, 255, 255, 0.842);
 }
 *{
     padding: 0px;
@@ -22,7 +23,7 @@ font-family: 'Lato', sans-serif;*/
     width: 100%;
     height: 14vw;
     margin-bottom: 0;
-    background: #fff; opacity: 0.75;
+    background: var(--forground-bg-color1);
     border: none;
     box-shadow: inset 0px 12px 18px -7px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
 }
@@ -147,11 +148,69 @@ nav> :nth-child(2){
 #main-program> .main-program-heading > .line{
     width:12vw;
     margin-top: 2%;
+    margin-bottom: 4%;
     background-color: var(--text-color);
-    height: .3vw;
+    height: .35vw;
     border-radius: 10px;
 }
 #main-program> .main-program-heading> h3{
     font-family: 'lato',sans-serif;
-    font-weight: 500;
+    font-weight: 700;
+    text-align: start;
+    font-size: 4vw;
+}
+.program-carts-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    height: auto;
+    margin: 2% 5% 0% 5%;
+}
+.program-cart{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    color: var(--forground-bg-color);
+    background: var(--bg-color1);
+}
+
+.program-cart> img{
+    width: 10vw;
+    height: 10vw;
+}
+.program-cart> span{
+    font-family:'lato',sans-serif;
+    font-weight: 600;
+    text-align:start;
+    font-size: 3.5vw;
+    color: var(--text-color);
+    padding: 0% 10% 0% 5%;
+}
+.program-cart> p{
+    padding: 1% 0%;
+    font-family: 'lato',sans-serif;
+    word-spacing: 1vw;
+    line-height: 4vw;
+    font-size: 2.5vw;
+    text-align: start;
+}
+.program-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+}
+.program-btn> button{
+    font-family: 'lato',sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 18vw;
+    border: none;
+    color: var(--forground-bg-color);
+    font-size: 5.5vw;
+    background-color: var(--text-color);
 }
