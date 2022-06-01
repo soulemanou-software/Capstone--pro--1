@@ -3,7 +3,7 @@
 # Project Name: Capstone for Tech company (FASTDEVZ) 
 
 > Description the project.
->This project shows all my abilities as a software developer  and also as a frontEnd developer 
+>This project shows all my abilities as a software developer  and also as a frontEnd developer and this is my first capstone project,about a tech company called fastdevz.
 
 ## Built With
 
