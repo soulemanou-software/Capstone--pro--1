@@ -245,12 +245,22 @@ nav> :nth-child(2){
     justify-content: center;
     align-items: center;
     padding: 2%;
+    margin: 5%;
+    font-family: 'lato',sans-serif;
+    background:var(--forground-bg-color);
+    border: .5vw solid var(--bg-color1);
+    border-radius: 5px;
+    font-size: 3vw;
+}
+#featured-lecturas>button:hover{
+    color: var(--text-color);
+    border: .5vw solid var(--text-color);
+    background: transparent;
 }
 #featured-lecturas>button img{
-    width:5vw;
-    height: 5vw;
+    width:4vw;
+    height: 4vw;
     padding-left: 2%;
-    color: var(--text-color);
 }
 .featured-lecturas-heading> .line{
     width: 12vw;
