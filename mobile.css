@@ -214,3 +214,9 @@ nav> :nth-child(2){
     font-size: 5.5vw;
     background-color: var(--text-color);
 }
+/*end of main program here*/
+#featured-lecturas{
+    border:2px solid red;
+    background: var(--forground-bg-color);
+    
+}
