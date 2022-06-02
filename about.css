@@ -1,0 +1,159 @@
+@font-face {
+    font-family: cocogoose;
+    src: url(resources/fonts/cocogoose-pro-regular.woff);
+  }
+  
+  :root {
+    --text-color: #ec5242;
+    --bg-color: #272a31;
+    --bg-color1: rgba(158, 160, 161, 0.192);
+    --forground-bg-color: #eee;
+    --forground-bg-color1: rgba(255, 255, 255, 0.842);
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* logo area */
+  #nav {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: 14vw;
+    margin-bottom: 0;
+    background: var(--forground-bg-color1);
+    border: none;
+    box-shadow: inset 0 12px 18px -7px rgba(0, 0, 0, 0.1), 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    flex: content;
+    flex-direction: row;
+    padding: 0%;
+    margin: 0%;
+    width: auto;
+    height: auto;
+  }
+  
+  nav > .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+    margin: 0%;
+    height: auto;
+    width: auto;
+  }
+  
+  nav > .logo > img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    margin: 0% 0 0 0;
+    padding: 0%;
+  }
+  
+  nav > :nth-child(2) {
+    margin-top: -1%;
+    width: 15vw;
+    height: 15vw;
+  }
+  
+  /* end of nav bar design here */
+  #headlines {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20% 5% 18% 5%;
+    margin: 0%;
+    background-color: var(--bg-color1);
+    background-image: url(Resources/images/about-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  
+  #headlines > :nth-child(1) {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 0% 1% 0%;
+    font-size: 4.5vw;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    color: var(--text-color);
+    text-align: start;
+  }
+  
+  #headlines :nth-child(2) {
+    background-image: url(Resources/images/about-bg.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-family: cocogoose;
+    box-sizing: border-box;
+    font-size: 7vw;
+    color: var(--text-color);
+    font-weight: 900;
+    padding-bottom: 5%;
+    text-align: center;
+  }
+  
+  #headlines :nth-child(3) {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'lato', sans-serif;
+    line-height: 5vw;
+    background-color: var(--forground-bg-color);
+    padding: 4%;
+    font-size: 4vw;
+    border: 1px solid var(--bg-color1);
+    text-align: start;
+    box-shadow: 0 10px 15px -3px rgba(87, 87, 87, 0.1);
+    word-spacing: 0.5vw;
+    word-wrap: break-word;
+  }
+  
+  #headlines :nth-child(4) {
+    font-family: 'lato', sans-serif;
+    font-weight: 200;
+    font-size: 4vw;
+    text-align: center;
+    color: var(--bg-color);
+    padding: 3% 0% 0% 0%;
+  }
+  
+  #headlines :nth-child(5) a{
+    font-family: 'lato', sans-serif;
+    font-weight: 600;
+    font-size: 3.8vw;
+    padding: 0%;
+    text-align: center;
+    color: var(--bg-color);
+
+  }
+  
+  /* ending of the headlines styling */
+  /*
+   width: 12vw;
+  margin-top: 2%;
+  margin-bottom: 4%;
+  background-color: var(--text-color);
+  height: 0.35vw;
+  border-radius: 10px;
+  */
