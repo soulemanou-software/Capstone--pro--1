@@ -145,7 +145,6 @@
     padding: 0%;
     text-align: center;
     color: var(--bg-color);
-
   }
   
   /* ending of the headlines styling */
@@ -174,6 +173,22 @@
     color: var(--text-color1);
     text-align: center;
   }
+  #about-logo> .line{
+    width: 12vw;
+    margin-top: 2%;
+    margin-bottom: 4%;
+    background-color: var(--text-color);
+    height: 0.35vw;
+    border-radius: 10px;
+  }
+  #about-logo :nth-child(3){
+    padding: 4% 0% 0% 0%;
+    font-size: 5vw;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    color: var(--text-color1);
+    text-align: center;
+  }
   .about-logo-cart-container{
     display:grid;
     grid-template-columns: 1fr;
@@ -190,16 +205,68 @@
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
   }
 .about-logo-cart-content :nth-child(1){
-  width:80vw;
-  height:25vw;
+  margin-top: -6%;
+  width: 80vw;
+  height: 25vw;
 }
 .about-logo-cart-content :nth-child(2){
   font-family: 'lato',sans-serif;
   font-weight: 600;
   margin-top: -9%;
+  margin-bottom: 15%;
   margin-left: 20%;
   padding: 0%;
   font-size: 3vw;
   border-top: 1px solid var(--bg-color);
   border-bottom: 1px solid var(--bg-color);
+}
+/*end of about logo*/
+/*fastdevz structures*/
+#fastdevz-look{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1vw solid var(--bg-color1);
+  padding:5%;
+}
+.fastdevz-look-cart-content{
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  position: relative;
+  width: 90vw;
+  height: 60vw;
+  background-color: rgba(0, 0, 0, 0.1);
+  
+
+}
+.fastdevz-look-cart-content :nth-child(1){
+  font-family:'lato',sans-serif;
+  font-weight: 900;
+  font-size: 8vw;
+  color: var(--forground-bg-color);
+}
+.fastdevz-look-cart-content :nth-child(2){
+  font-family:'lato',sans-serif;
+  font-size: 5vw;
+  font-weight: 400;
+  color: var(--forground-bg-color);
+}
+.fastdevz-look-cart-content :nth-child(1), .fastdevz-look-cart-content :nth-child(2){
+  position: relative;
+  line-height: 8vw;
+}
+.fastdevz-look-cart-content::before{
+  content: '';
+  position:absolute;
+  top:0%;
+  right:0%;
+  left:0%;
+  bottom:0%;
+  background-image: linear-gradient(rgba(206, 14, 14, 0.6),rgba(230, 27, 27, 0.3)), url(Resources/images/Free\ Office\ Logo\ Mockup.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
