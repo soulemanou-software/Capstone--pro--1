@@ -5,7 +5,7 @@
   
   :root {
     --text-color: #ec5242;
-    --bg-color: #272a31;
+    --bg-color: #070707;
     --bg-color1: rgba(158, 160, 161, 0.192);
     --forground-bg-color: #eee;
     --forground-bg-color1: rgba(255, 255, 255, 0.842);
@@ -131,10 +131,10 @@
   
   #headlines :nth-child(4) {
     font-family: 'lato', sans-serif;
-    font-weight: 200;
+    font-weight: 600;
     font-size: 4vw;
     text-align: center;
-    color: var(--bg-color);
+    color: black;
     padding: 3% 0% 0% 0%;
   }
   
@@ -159,14 +159,25 @@
   */
   /*about the logo section*/
   #about-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border-bottom: 1vw solid var(--bg-color1);
     padding:5%;
+  }
+  #about-logo :nth-child(1){
+    padding: 10% 0% 0% 0%;
+    font-size: 8vw;
+    font-weight: 600;
+    font-family: 'Lato', sans-serif;
+    color: var(--text-color1);
+    text-align: center;
   }
   .about-logo-cart-container{
     display:grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    gap: 2vw;
   }
   .about-logo-cart-content{
     display: flex;
@@ -174,6 +185,7 @@
     justify-content: center;
     align-items: center;
     padding:5%;
+    margin-top: 5%;
     border: .8vw solid var(--bg-color1);
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
   }
@@ -187,7 +199,7 @@
   margin-top: -9%;
   margin-left: 20%;
   padding: 0%;
-  font-size: 3.5vw;
+  font-size: 3vw;
   border-top: 1px solid var(--bg-color);
   border-bottom: 1px solid var(--bg-color);
 }
