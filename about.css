@@ -157,3 +157,37 @@
   height: 0.35vw;
   border-radius: 10px;
   */
+  /*about the logo section*/
+  #about-logo{
+    border-bottom: 1vw solid var(--bg-color1);
+    padding:5%;
+  }
+  .about-logo-cart-container{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 2vw;
+  }
+  .about-logo-cart-content{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding:5%;
+    border: .8vw solid var(--bg-color1);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  }
+.about-logo-cart-content :nth-child(1){
+  width:80vw;
+  height:25vw;
+}
+.about-logo-cart-content :nth-child(2){
+  font-family: 'lato',sans-serif;
+  font-weight: 600;
+  margin-top: -9%;
+  margin-left: 20%;
+  padding: 0%;
+  font-size: 3.5vw;
+  border-top: 1px solid var(--bg-color);
+  border-bottom: 1px solid var(--bg-color);
+}
