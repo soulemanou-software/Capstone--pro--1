@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'cocogoose', sans-serif;
+  font-family: cocogoose;
   src: url(resources/fonts/cocogoose-pro-regular.woff);
 }
 
@@ -94,7 +94,7 @@ nav > :nth-child(2) {
 }
 
 #headlines :nth-child(2) {
-  font-family:'cocogoose', sans-serif;
+  font-family: cocogoose;
   box-sizing: border-box;
   font-size: 7vw;
   font-weight: 900;
@@ -121,7 +121,7 @@ nav > :nth-child(2) {
 }
 
 #headlines :nth-child(4) {
-  font-family: 'cocogoose', sans-serif;
+  font-family: cocogoose;
   font-weight: 500;
   font-size: 5vw;
   padding: 3% 0% 0% 0%;
@@ -185,31 +185,34 @@ nav > :nth-child(2) {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 2%;
+  padding: 0%;
   color: var(--forground-bg-color);
   background: var(--bg-color1);
+  height: auto;
 }
 
 .program-cart > img {
-  width: 10vw;
-  height: 10vw;
+  width: 15vw;
+  height: 15vw;
+  padding: 5% 2%;
 }
 
 .program-cart > span {
   font-family: 'lato', sans-serif;
   font-weight: 600;
   text-align: start;
-  font-size: 3.5vw;
+  font-size: 5.5vw;
   color: var(--text-color);
-  padding: 0% 10% 0% 5%;
+  padding: 0% 5% 0% 0%;
 }
 
 .program-cart > p {
-  padding: 1% 0%;
+  padding: 2%;
   font-family: 'lato', sans-serif;
   word-spacing: 1vw;
-  line-height: 4vw;
-  font-size: 2.5vw;
+  word-wrap:normal;
+  line-height: 5vw;
+  font-size: 3.5vw;
   text-align: start;
 }
 
