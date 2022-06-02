@@ -1,5 +1,5 @@
 @font-face {
-  font-family: coco;
+  font-family: 'cocogoose', sans-serif;
   src: url(resources/fonts/cocogoose-pro-regular.woff);
 }
 
@@ -94,7 +94,7 @@ nav > :nth-child(2) {
 }
 
 #headlines :nth-child(2) {
-  font-family: coco;
+  font-family:'cocogoose', sans-serif;
   box-sizing: border-box;
   font-size: 7vw;
   font-weight: 900;
@@ -121,7 +121,7 @@ nav > :nth-child(2) {
 }
 
 #headlines :nth-child(4) {
-  font-family: coco;
+  font-family: 'cocogoose', sans-serif;
   font-weight: 500;
   font-size: 5vw;
   padding: 3% 0% 0% 0%;
