@@ -230,43 +230,57 @@
   border-bottom: 1vw solid var(--bg-color1);
   padding:5%;
 }
+#fastdevz-look> h2{
+  padding: 2% 0% 0% 0%;
+  font-size: 6vw;
+  font-weight: 600;
+  font-family: 'Lato', sans-serif;
+  color: var(--text-color1);
+  text-align: center;
+}
+
+#fastdevz-look> .line{
+  width: 12vw;
+  margin-top: 2%;
+  margin-bottom: 4%;
+  background-color: var(--text-color);
+  height: 0.35vw;
+  border-radius: 10px;
+}
+#fastdevz-look :nth-child(3){
+  padding: 0% 0% 5% 0%;
+    font-size: 5vw;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    color: var(--text-color1);
+    text-align: center;
+}
 .fastdevz-look-cart-content{
   display:flex;
   flex-direction: column;
   justify-content:center;
   align-items: center;
-  position: relative;
   width: 90vw;
   height: 60vw;
-  background-color: rgba(0, 0, 0, 0.1);
+  margin-bottom: 5%;
+  background-image: linear-gradient(rgba(206, 14, 14, 0.6),rgba(230, 27, 27, 0.3)), url(Resources/images/Free\ Office\ Logo\ Mockup.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover
   
 
 }
 .fastdevz-look-cart-content :nth-child(1){
-  font-family:'lato',sans-serif;
   font-weight: 900;
   font-size: 8vw;
   color: var(--forground-bg-color);
 }
 .fastdevz-look-cart-content :nth-child(2){
-  font-family:'lato',sans-serif;
   font-size: 5vw;
   font-weight: 400;
   color: var(--forground-bg-color);
 }
 .fastdevz-look-cart-content :nth-child(1), .fastdevz-look-cart-content :nth-child(2){
-  position: relative;
+  font-family: 'lato',sans-serif;
   line-height: 8vw;
-}
-.fastdevz-look-cart-content::before{
-  content: '';
-  position:absolute;
-  top:0%;
-  right:0%;
-  left:0%;
-  bottom:0%;
-  background-image: linear-gradient(rgba(206, 14, 14, 0.6),rgba(230, 27, 27, 0.3)), url(Resources/images/Free\ Office\ Logo\ Mockup.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
