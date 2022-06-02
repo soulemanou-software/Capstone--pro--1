@@ -145,6 +145,7 @@ nav > :nth-child(2) {
   background-repeat: repeat;
   background-position: center center;
   height: auto;
+  width: 100%;
   padding-top: 5%;
 }
 
@@ -169,7 +170,7 @@ nav > :nth-child(2) {
   font-family: 'lato', sans-serif;
   font-weight: 700;
   text-align: start;
-  font-size: 4vw;
+  font-size: 5vw;
 }
 
 .program-carts-container {
@@ -259,7 +260,7 @@ nav > :nth-child(2) {
   justify-content: center;
   align-items: center;
   color: var(--bg-color);
-  font-size: 3vw;
+  font-size: 5vw;
   padding: 5%;
 }
 
