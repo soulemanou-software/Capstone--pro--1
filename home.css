@@ -319,6 +319,7 @@ nav > :nth-child(2) {
   grid-template-rows: auto;
   height: auto;
   background: var(--bg-color1);
+  padding: 5%;
  
 
 }

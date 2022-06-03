@@ -12,6 +12,7 @@ mainNav.addEventListener('click', (event) => {
     mainNav.classList.remove('show');
   }
 });
+
 /*here is for the lecturas data cart creation */
 
 const features = [
