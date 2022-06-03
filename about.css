@@ -413,7 +413,8 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2.6%;
+  width:100%;
+  padding: 0%;
   color: var(--forground-bg-color);
   background: var(--bg-color);
 }
@@ -424,6 +425,7 @@ footer {
   align-items: center;
   flex-wrap: wrap;
   gap: 5%;
+  padding: 4%;
   width: 91.2vw;
   height: 30vw;
 }
