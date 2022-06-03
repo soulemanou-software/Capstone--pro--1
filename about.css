@@ -17,6 +17,75 @@
   }
   
   /* logo area */
+
+  #mainNav {
+    display: none;
+  }
+  #mainNav.show{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 5% 0%;
+    transition: 1s ease-in;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(4px);
+  }
+  #mainNav> .fa-times{
+    margin-right: 5%;
+    width: 6vw;
+    height: 6vw;
+    color: #fff;
+  }
+  
+  #mainNav ul {
+    font-family: 'lato',sans-serif;
+    list-style-type: none;
+    padding-top: 5vw;
+    padding-left: 5vw;
+  }
+  #mainNav ul a{
+    font-family: 'lato',sans-serif;
+    text-decoration: none;
+    color: #fff;
+  }
+  #mainNav ul li {
+    font-family: 'lato',sans-serif;
+    margin-top: 5vw;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  .aboutLink {
+    color: #ec5242;
+  }
+  
+  .mainNavBtn {
+    font-family: 'lato',sans-serif;
+    color: #ec5242;
+    background-color: transparent;
+    padding: 3vw 5vw;
+    border: 3px solid #ec5242;
+    font-size: inherit;
+    font-weight: inherit;
+    cursor: pointer;
+  }
+  
+  .mainNavBtn:hover {
+    color: #fff;
+    background-color: #ec5242;
+    padding: 3vw 5vw;
+    border: 3px solid #ec5242;
+    transition: 0.5s;
+  }
+  
   #nav {
     display: flex;
     justify-content: center;

@@ -9,23 +9,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 <link rel="icon" href="Resources/images/fastdevz-icon.png">
     <title>FASTDEVZ INC</title>
 </head>
 <body>
-     <!-- header with hav in it & the header need to be in the javascript object -->
-     <header id="nav">
+    <!-- header with hav in it & the header need to be in the javascript object -->
+    <header id="nav">
         <!-- use only in desktop-->
             <div class="header-bar">  
             </div>
         <!-- end-->
         <nav>
             <a class="logo" href="index.html"><img src="Resources/images/my-logo.png" alt="fastdevz logo"></a>
-            <img src="Resources/images/menu-icon-1.png" alt="tagle-menu">
+            <img  id="menuBtn" src="Resources/images/menu-icon-1.png" alt="tagle-menu">
+            <div id="mainNav">
+                <i id="closeBtn" class="fas fa-times fa-lg"></i>
+                <ul>
+                    <li><a class="aboutLink" href="index.html">Home</a></li>
+                    <li><a href="#about-logo">Logo Story</a></li>
+                    <li><a href="#fastdevz-look">Our Work Place</a></li>
+                    <li><a href="#partners">Partners</a></li>
+                    <li><button type="button" class="mainNavBtn">Fastdevz</button></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <!-- End of the header here -->
-
     <!-- section headlines start here -->
     <section id="headlines">
         <q class="head-text-1">Welcome To The World of Infinity Creations</q>
@@ -41,7 +52,7 @@
     <section id="about-logo">
         <h2>Fast development zone 2016</h2>
         <div class="line"></div>
-        <h3>The logo of Fastdevz was decided through the logo competition from 05.Feb to 12.July</h3>
+        <h3>The logo of Fastdevz was decided through the logo competition and creative thinking of Mr Rames pires and Mr Soulemanou Babanou from 05.Feb to 12.July</h3>
         <!-- about cart zone  -->
         <div class="about-logo-cart-container">
             <!-- about cart here -->
@@ -87,7 +98,7 @@
         </div>
         <!-- end of fastdevz structure cart zone  -->
     </section>
-    <footer>
+    <footer id="partners">
         <div class="forter-head">
             <h2>Partners</h2>
             <div class="line"></div>
