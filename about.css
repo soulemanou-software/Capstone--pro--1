@@ -1,353 +1,434 @@
-@font-face {
-    font-family: cocogoose;
-    src: url(resources/fonts/cocogoose-pro-regular.woff);
-  }
-  
-  :root {
-    --text-color: #ec5242;
-    --bg-color: #070707;
-    --bg-color1: rgba(158, 160, 161, 0.192);
-    --forground-bg-color: #eee;
-    --forground-bg-color1: rgba(255, 255, 255, 0.842);
-  }
-  
-  * {
-    padding: 0;
-    margin: 0;
-  }
-  
-  /* logo area */
-  #nav {
-    display: flex;
-    justify-content: center;
-    position: fixed;
-    width: 100%;
-    height: 14vw;
-    margin-bottom: 0;
-    background: var(--forground-bg-color1);
-    border: none;
-    box-shadow: inset 0 12px 18px -7px rgba(0, 0, 0, 0.1), 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-  }
-  
-  nav > a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-    height: auto;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: space-between;
-    flex: content;
-    flex-direction: row;
-    padding: 0%;
-    margin: 0%;
-    width: auto;
-    height: auto;
-  }
-  
-  nav > .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0%;
-    margin: 0%;
-    height: auto;
-    width: auto;
-  }
-  
-  nav > .logo > img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    height: 80%;
-    margin: 0% 0 0 0;
-    padding: 0%;
-  }
-  
-  nav > :nth-child(2) {
-    margin-top: -1%;
-    width: 15vw;
-    height: 15vw;
-  }
-  
-  /* end of nav bar design here */
-  #headlines {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 20% 5% 18% 5%;
-    margin: 0%;
-    background-color: var(--bg-color1);
-    background-image: url(Resources/images/about-bg.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  
-  #headlines > :nth-child(1) {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10% 0% 1% 0%;
-    font-size: 4.5vw;
-    font-weight: 400;
-    font-family: 'Lato', sans-serif;
-    color: var(--text-color);
-    text-align: start;
-  }
-  
-  #headlines :nth-child(2) {
-    background-image: url(Resources/images/about-bg.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    font-family: cocogoose;
-    box-sizing: border-box;
-    font-size: 7vw;
-    color: var(--text-color);
-    font-weight: 900;
-    padding-bottom: 5%;
-    text-align: center;
-  }
-  
-  #headlines :nth-child(3) {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'lato', sans-serif;
-    line-height: 5vw;
-    background-color: var(--forground-bg-color);
-    padding: 4%;
-    font-size: 4vw;
-    border: 1px solid var(--bg-color1);
-    text-align: start;
-    box-shadow: 0 10px 15px -3px rgba(87, 87, 87, 0.1);
-    word-spacing: 0.5vw;
-    word-wrap: break-word;
-  }
-  
-  #headlines :nth-child(4) {
-    font-family: 'lato', sans-serif;
-    font-weight: 600;
-    font-size: 4vw;
-    text-align: center;
-    color: black;
-    padding: 3% 0% 0% 0%;
-  }
-  
-  #headlines :nth-child(5) a{
-    font-family: 'lato', sans-serif;
-    font-weight: 600;
-    font-size: 3.8vw;
-    padding: 0%;
-    text-align: center;
-    color: var(--bg-color);
-  }
-  
-  /* ending of the headlines styling */
-  /*
-   width: 12vw;
-  margin-top: 2%;
-  margin-bottom: 4%;
-  background-color: var(--text-color);
-  height: 0.35vw;
-  border-radius: 10px;
-  */
-  /*about the logo section*/
-  #about-logo{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-bottom: 1vw solid var(--bg-color1);
-    padding:5%;
-  }
-  #about-logo :nth-child(1){
-    padding: 10% 0% 0% 0%;
-    font-size: 8vw;
-    font-weight: 600;
-    font-family: 'Lato', sans-serif;
-    color: var(--text-color1);
-    text-align: center;
-  }
-  #about-logo> .line{
-    width: 12vw;
-    margin-top: 2%;
-    margin-bottom: 4%;
-    background-color: var(--text-color);
-    height: 0.35vw;
-    border-radius: 10px;
-  }
-  #about-logo :nth-child(3){
-    padding: 4% 0% 0% 0%;
-    font-size: 5vw;
-    font-weight: 400;
-    font-family: 'Lato', sans-serif;
-    color: var(--text-color1);
-    text-align: center;
-  }
-  .about-logo-cart-container{
-    display:grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-  }
-  .about-logo-cart-content{
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items: center;
-    padding:5%;
-    margin-top: 5%;
-    border: .8vw solid var(--bg-color1);
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-  }
-.about-logo-cart-content :nth-child(1){
-  margin-top: -6%;
-  width: 80vw;
-  height: 25vw;
+/* ############ Reset Styling ############ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.about-logo-cart-content :nth-child(2){
-  font-family: 'lato',sans-serif;
-  font-weight: 600;
-  margin-top: -9%;
-  margin-bottom: 15%;
-  margin-left: 20%;
-  padding: 0%;
-  font-size: 3vw;
-  border-top: 1px solid var(--bg-color);
-  border-bottom: 1px solid var(--bg-color);
+
+/* ############ General Changes ############ */
+
+html {
+  scroll-behavior: smooth;
 }
-/*end of about logo*/
-/*fastdevz structures*/
-#fastdevz-look{
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #272a31;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #ec5242;
+}
+
+ul {
+  list-style: none;
+}
+
+.sectionCont {
+  padding: 60px 0;
+  width: 95%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-items: center;
+}
+
+.sectionTitle {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border-bottom: 1vw solid var(--bg-color1);
-  padding:5%;
 }
-#fastdevz-look> h2{
-  padding: 2% 0% 0% 0%;
-  font-size: 6vw;
-  font-weight: 600;
-  font-family: 'Lato', sans-serif;
-  color: var(--text-color1);
+
+.sectionTitle h2 {
+  width: 80%;
+  font-size: 1.5em;
+  font-weight: bold;
   text-align: center;
 }
 
-#fastdevz-look> .line{
-  width: 12vw;
-  margin-top: 2%;
-  margin-bottom: 4%;
-  background-color: var(--text-color);
-  height: 0.35vw;
-  border-radius: 10px;
+.sectionTitle hr {
+  height: 0;
+  width: 40px;
+  border: 0.5px solid #ec5242;
+  margin-top: 15px;
 }
-#fastdevz-look :nth-child(3){
-  padding: 0% 0% 5% 0%;
-    font-size: 5vw;
-    font-weight: 400;
-    font-family: 'Lato', sans-serif;
-    color: var(--text-color1);
-    text-align: center;
+
+/* ###################### Mobile Version ###################### */
+
+/* ############ Top nav Menu ############ */
+
+.topMenu {
+  display: none;
 }
-.fastdevz-look-cart-content{
-  display:flex;
-  flex-direction: column;
-  justify-content:center;
+
+/* ############ Main nav Menu ############ */
+
+.mainMenu {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+
+.mainMenuCont {
+  width: 85%;
+  margin: 0 auto;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  width: 90vw;
-  height: 60vw;
-  margin-bottom: 5%;
-  background-image: linear-gradient(rgba(206, 14, 14, 0.6),rgba(230, 27, 27, 0.3)), url(Resources/images/Free\ Office\ Logo\ Mockup.png);
-  background-position: center center;
+}
+
+.logo img {
+  width: 65%;
+}
+
+#mainNav {
+  display: none;
+}
+
+#mainNav.show {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 27px 7.55%;
+  transition: 5s ease-in;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(4px);
+}
+
+#mainNav .fa-times {
+  color: #fff;
+}
+
+#mainNav ul {
+  padding-top: 50px;
+  padding-left: 20px;
+}
+
+#mainNav ul li {
+  margin-top: 30px;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.aboutLink {
+  color: #ec5242;
+}
+
+.mainNavBtn {
+  color: #ec5242;
+  background-color: transparent;
+  padding: 10px 15px;
+  border: 3px solid #ec5242;
+  font-size: inherit;
+  font-weight: inherit;
+  cursor: pointer;
+}
+
+.mainNavBtn:hover {
+  color: #fff;
+  background-color: #ec5242;
+  padding: 10px 15px;
+  border: 3px solid #ec5242;
+  transition: 0.5s;
+}
+
+/* ############ Hero Section ############ */
+
+.hero {
+  width: 100%;
+  padding-top: 50px;
+  background-image: url(./images/mobile-hero-bg.png);
   background-repeat: no-repeat;
-  background-size: cover
-  
+  background-position: 75%;
+  background-size: cover;
+  height: auto;
+  background-color: #f7f7f8;
+  border-bottom: 1px solid #d3d3d3;
+}
 
-}
-.fastdevz-look-cart-content :nth-child(1){
+.hero h1 {
+  color: #ec5242;
+  font-size: 1.9em;
   font-weight: 900;
-  font-size: 8vw;
-  color: var(--forground-bg-color);
-}
-.fastdevz-look-cart-content :nth-child(2){
-  font-size: 5vw;
-  font-weight: 400;
-  color: var(--forground-bg-color);
-}
-.fastdevz-look-cart-content :nth-child(1), .fastdevz-look-cart-content :nth-child(2){
-  font-family: 'lato',sans-serif;
-  line-height: 8vw;
-}
-/*end of the fastdevz working place*/
-/*footer section with partners*/
-footer{
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0%;
-}
-.forter-head{
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 5%;
-  color: var(--forground-bg-color);
-  background: var(--bg-color);
-}
-.forter-head> h2{
-  padding: 2% 0% 0% 0%;
-  font-size: 6vw;
-  font-weight: 600;
-  font-family: 'Lato', sans-serif;
-  color: var(--text-color1);
+  line-height: 110%;
   text-align: center;
 }
-.forter-head> .line{
-  width: 12vw;
-  margin-top: 1%;
-  margin-bottom: 4%;
-  background-color: var(--text-color);
-  height: 0.35vw;
-  border-radius: 10px;
+
+.message {
+  width: 95%;
+  margin: 20px auto;
+  padding: 1em 1em;
+  border: 1px solid #d3d3d3;
+  background-color: #fff;
+  line-height: 1.9em;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
 }
-.partner-logos{
+
+.contactUs {
+  width: 90%;
+  margin: 10px auto;
+  text-align: center;
+}
+
+.contactLink {
+  color: black;
+  font-weight: 600;
+  padding-bottom: 2px;
+  border-bottom: 1px solid black;
+}
+
+/* ############ CES Logo Section ############ */
+
+.CESLogo {
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.CESLogo p {
+  margin-top: 15px;
+  font-size: 0.9em;
+  font-weight: 500;
+  text-align: center;
+}
+
+.LogoBox {
+  width: 95%;
+  margin-top: 30px;
+  padding: 30px 0;
   display: flex;
   justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 5%;
-  width: 95vw;
-  height: 30vw;
+  border: 1px solid #d3d3d3;
 }
-.partner-logos> img{
-  width: 25vw;
-  height: 8vw;
+
+.LogoBox img {
+  width: 70%;
 }
-.footer-footer{
-  padding: 5%;
+
+/* ############ Last Events Section ############ */
+
+.pastEvents p {
+  margin-top: 15px;
+  font-size: 0.9em;
+  font-weight: 500;
+  text-align: center;
+}
+
+.pastEventsImg {
+  width: 90%;
+  margin-top: 20px;
+}
+
+.cesImg img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* ############ Footer ############ */
+
+footer {
+  background-color: #272a31;
+}
+
+footer .sectionCont {
+  width: 90%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background: var(--forground-bg-color1);
+  gap: 20px;
 }
-.footer-footer> img{
-  padding-right: 5%;
-  width: 35vw;
-  height: 10vw
+
+.footer img {
+  width: 130px;
 }
-.footer-footer> p{
-  font-size: 3.3vw;
-  font-weight: 600;
-  font-family: 'Lato', sans-serif;
-  color: var(--text-color1);
-  text-align: start;
+
+.footer p {
+  color: #d3d3d3;
+  font-size: 0.9em;
+  font-weight: 500;
+  text-align: center;
+}
+
+/* ###################### Desktop Version ###################### */
+
+@media only screen and (min-width: 768px) {
+  /* ############ Global Changes ############ */
+
+  .sectionTitle h2 {
+    width: 100%;
+    font-size: 2em;
+  }
+
+  .sectionTitle hr {
+    height: 0;
+    width: 40px;
+    border: 0.5px solid #ec5242;
+    margin-top: 20px;
+  }
+
+  /* ############ Top nav Menu ############ */
+
+  .topMenu {
+    display: block;
+    width: 100%;
+    background-color: #3e3e3e;
+  }
+
+  #topNav {
+    max-width: 1100px;
+    width: 98%;
+    height: 36px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .topMenu ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .topMenu a {
+    color: #fff;
+  }
+
+  .topMenu a:hover {
+    color: #ec5242;
+  }
+
+  /* ############ Main nav Menu ############ */
+
+  .mainMenu {
+    top: 36px;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
+  }
+
+  .mainMenuCont {
+    max-width: 1100px;
+    width: 98%;
+    height: 80px;
+  }
+
+  .mainMenuCont .fa-bars {
+    display: none;
+  }
+
+  #mainNav .fa-times {
+    display: none;
+  }
+
+  #mainNav {
+    display: block;
+  }
+
+  .logo img {
+    width: 80%;
+  }
+
+  #mainNav ul {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding-top: 0;
+    padding-left: 0;
+  }
+
+  #mainNav ul li {
+    color: #888;
+    margin-top: 0;
+    font-size: 1em;
+  }
+
+  /* ############ Hero Section ############ */
+
+  .hero {
+    margin-top: 80px;
+    background-image: url(R/images/about-bg.png);
+    background-position: 100%;
+    background-size: contain;
+  }
+
+  .hero h1 {
+    font-size: 4em;
+    line-height: 100%;
+  }
+
+  .message {
+    width: 60%;
+    margin: 50px auto;
+    font-size: 1.1em;
+    font-weight: 500;
+  }
+
+  /* ############ fastdevz Logo Section ############ */
+
+  .CESLogo {
+    border-bottom: 1px solid #d3d3d3;
+  }
+
+  .CESLogo p {
+    margin-top: 30px;
+    font-size: 1.1em;
+  }
+
+  .LogoBox {
+    width: 50%;
+    margin-top: 60px;
+  }
+
+  /* ############ Last Events Section ############ */
+
+  .pastEvents p {
+    margin-top: 30px;
+    font-size: 1.1em;
+  }
+
+  .pastEventsImg {
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .cesImg {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .cesImg img {
+    width: 45%;
+  }
+
+  /* ############ Footer ############ */
+
+  .footer img {
+    width: 250px;
+  }
+
+  .footer p {
+    color: #d3d3d3;
+    font-size: 1.1em;
+  }
 }
