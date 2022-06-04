@@ -1,7 +1,7 @@
-// Mobile menu function//
+// ################# Mobile Menu #################
+
 const menuBtn = document.getElementById('menuBtn');
 const mainNav = document.getElementById('mainNav');
-const featureSection = document.querySelector('.featured-carts-container');
 
 menuBtn.addEventListener('click', () => {
   mainNav.classList.add('show');
@@ -13,67 +13,100 @@ mainNav.addEventListener('click', (event) => {
   }
 });
 
-/* here is for the lecturas data cart creation */
+// ################# Featured Speaker Section #################
 
-const features = [
+const data = [
   {
-    id: 1,
-    photo: './Resources/images/11 PM.png',
-    name: 'Soulemanou Babanou',
-    role: 'C.E.O & Founder Of Fastdevz',
-    topic: 'A computer would deserve to be called intelligent if it could deceive a human into believing that it was human',
+    speakerImageSrc: './images/speaker_01.png',
+    speakerImageAlt: 'speaker 1 image',
+    speakerName: 'Lisa Su',
+    speakerTitle: 'Business executive and electrical engineer, and CEO of AMD',
+    speakerDesc:
+      'Early in her career, Su worked at Texas Instruments, IBM, and Freescale Semiconductor in engineering and management positions.',
   },
   {
-    id: 2,
-    photo: './Resources/images/speaker_01.png',
-    name: 'John Who ',
-    role: 'Sotware Engineer and teacher of DBMS',
-    topic: 'A computer would deserve to be called intelligent if it could deceive a human into believing that it was human',
+    speakerImageSrc: './images/speaker_02.png',
+    speakerImageAlt: 'speaker 2 image',
+    speakerName: 'Pat Gelsinger',
+    speakerTitle:
+      'American business executive and engineer, currently serving as CEO of Intel',
+    speakerDesc:
+      "Graduated from Stanford University with a master's degree in engineering. .",
   },
   {
-    id: 3,
-    photo: './Resources/images/speaker_03.png',
-    name: 'Peter Code',
-    role: 'Back-end developer and mentor at Fastdevz',
-    topic: 'A computer would deserve to be called intelligent if it could deceive a human into believing that it was human',
+    speakerImageSrc: './images/speaker_03.png',
+    speakerImageAlt: 'speaker 3 image',
+    speakerName: 'Noh So-young',
+    speakerTitle: 'Electrical engineer, and CEO of Qualcomm',
+    speakerDesc:
+      'Amon began his Qualcomm career in 1995 as an engineer, and during his tenure, has helped shape the strategic direction for the Company in several leadership roles.',
   },
   {
-    id: 4,
-    photo: './Resources/images/speaker_04.png',
-    name: 'Rames Pires',
-    role: 'Co-founder of Fastdevz',
-    topic: 'A computer would deserve to be called intelligent if it could deceive a human into believing that it was human',
+    speakerImageSrc: './images/speaker_04.png',
+    speakerImageAlt: 'speaker 4 image',
+    speakerName: 'Koo Kwang-mo',
+    speakerTitle: 'Korean Business man, and CEO of LG',
+    speakerDesc:
+      'Young leader Koo Kwang-mo bore the burden of continuing this “right path” management and, at the same time, seeking survival in an ever more competitive global market.',
   },
   {
-    id: 5,
-    photo: './Resources/images/speaker_05.png',
-    name: 'Astrid Mugisha',
-    role: 'Secretary and legal laws professor',
-    topic: 'A computer would deserve to be called intelligent if it could deceive a human into believing that it was human',
+    speakerImageSrc: './images/speaker_05.png',
+    speakerImageAlt: 'speaker 5 image',
+    speakerName: 'Kenichiro Yoshida',
+    speakerTitle: 'Business executive, and CEO of Sony',
+    speakerDesc:
+      'Kenichiro Yoshida has been the Chief Financial Officer of Sony Corporation since April 1, 2014 and Executive Deputy President since April 2015. And served as an Executive Vice President of Sony since December 1, 2013.',
   },
   {
-    id: 6,
-    photo: './Resources/images/speaker_06.png',
-    name: 'Claudia',
-    role: 'H.O.D of social science with master degree',
-    topic: 'A computer would deserve to be called intelligent if it could deceive a human into believing that it was human',
+    speakerImageSrc: './images/speaker_06.png',
+    speakerImageAlt: 'speaker 6 image',
+    speakerName: 'Koh Dong-jin',
+    speakerTitle: 'Business executive, and CEO of Samsung',
+    speakerDesc:
+      "In 2015, Koh became the CEO of Samsung. In January 2022, Koh stepped down as Samsung Fastdevz to become a co-CEO leading the company's IT and mobile communications division.",
   },
 ];
 
-for (let n = 0; n < features.length; n += 1) {
-  const feature = features[n];
+function createSpeaker() {
+  const speakersCont = document.getElementById('speakersCont');
+  const sectionTitle = document.createElement('div');
+  sectionTitle.classList.add('sectionTitle');
+  const sectionTitleH2 = document.createElement('h2');
+  sectionTitleH2.innerHTML = 'Featured Speakers';
+  const sectionTitleHr = document.createElement('hr');
+  const speakersList = document.createElement('div');
+  speakersList.classList.add('speakersList');
+  for (let i = 0; i < data.length; i += 1) {
+    const speaker = document.createElement('div');
+    speaker.classList.add('speaker');
+    const speakerImg = document.createElement('img');
+    speakerImg.classList.add('speakerImg');
+    speakerImg.setAttribute('src', data[i].speakerImageSrc);
+    speakerImg.setAttribute('alt', data[i].speakerImageAlt);
+    const speakerInfo = document.createElement('div');
+    speakerInfo.classList.add('speakerInfo');
+    const speakerName = document.createElement('h3');
+    speakerName.classList.add('speakerName');
+    speakerName.innerHTML = data[i].speakerName;
+    const speakerTitle = document.createElement('p');
+    speakerTitle.classList.add('speakerTitle');
+    speakerTitle.innerHTML = data[i].speakerTitle;
+    const hr = document.createElement('hr');
+    const speakerDesc = document.createElement('p');
+    speakerDesc.classList.add('speakerDesc');
+    speakerDesc.innerHTML = data[i].speakerDesc;
 
-  featureSection.innerHTML += `
-    <div class="featured-cart feature-cart-content" >
-        <div class="teach-img">
-            <img src="${feature.photo}" alt="teacher_pic" class="teacher_pic">
-        </div>
-             <div class="featured-text-content">
-                 <h2>${feature.name}</h2>
-                    <em> ${feature.role}</em>
-                    <div class="line"></div>
-                     <p>${feature.topic}</p>
-            </div>
-         </div>
-    `;
+    speakerInfo.append(speakerName);
+    speakerInfo.append(speakerTitle);
+    speakerInfo.append(hr);
+    speakerInfo.append(speakerDesc);
+    speaker.append(speakerImg);
+    speaker.append(speakerInfo);
+    sectionTitle.append(sectionTitleH2);
+    sectionTitle.append(sectionTitleHr);
+    speakersList.append(speaker);
+    speakersCont.append(sectionTitle);
+    speakersCont.append(speakersList);
+  }
 }
+createSpeaker(data);

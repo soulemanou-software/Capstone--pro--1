@@ -1,152 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="desktop.css">
-    <link rel="stylesheet" href="home.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="./images/WebSite-Mockup.png">
+    <meta property="og:title" content="CES-2021">
+    <meta property="og:description" content="This Project about CES tech summit 2021 contains the program, speakers, and sponsors.">
+    <meta property="og:url" content="https://omar-muhamad.github.io/CES-2021-Capstone/">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-<link rel="icon" href="Resources/images/fastdevz-icon.png">
-    <title>FASTDEVZ</title>
-</head>
-<body>
-        <!-- header with hav in it & the header need to be in the javascript object -->
-        <header id="nav">
-            <!-- use only in desktop-->
-                <div class="header-bar">  
-                </div>
-            <!-- end-->
-            <nav>
-                <a class="logo" href="index.html"><img src="Resources/images/my-logo.png" alt="fastdevz logo"></a>
-                <img  id="menuBtn" src="Resources/images/menu-icon-1.png" alt="tagle-menu">
-                <div id="mainNav">
-                    <i id="closeBtn" class="fas fa-times fa-lg"></i>
-                    <ul>
-                      <li><a class="aboutLink" href="about.html">About</a></li>
-                      <li><a href="#mainProgram">Program</a></li>
-                      <li><a href="#featured-lecturas">Lecturas</a></li>
-                      <li><a href="#partners">Partners</a></li>
-                      <li><button type="button" class="mainNavBtn">Fastdevz</button></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-        <!-- End of the header here -->
-
-        <!-- section headlines start here -->
-        <section id="headlines">
-            <q class="head-text-1">Welcome To The World of Infinity Creations</q>
-            <h2 class="head-text-2">SOFTWARE IS A GREAT COMBINATION BETWEEN ARTISTRY AND ENGINEERING.</h2>
-            <p>
-                Excellent customer service is the number one job in any company! It is the personality of the company and the reason customers come back. Without customers there is no company. (the customer is king at fastdevz)
-            </p>
-            <h3> Twelve (MON) ~ Sixteen (FRI)</h3>
-            <span>@ Fastdevelopmentzone, At Cameroon,Yaounde.</span>
-        </section>
-        <!-- ending of the headlines -->
-        <!-- main program swection -->
-        <section id="main-program">
-            <div class="main-program-heading">
-                <h3>Main Software Development Program</h3>
-                <!-- lettel line  -->
-                <div class="line"></div>
-                <!-- end of lettel line  -->
-            </div>
-               <!-- cart area which needs to be in app.js  -->
-               <div class="program-carts-container">
-                <div class="program-cart cart-content">
-                    <img src="Resources/images/program_icon_03.png" alt="lecture">
-                    <span>Mesages</span>
-                    <p>A language that doesn’t affect the way you think about programming is not worth knowing.
-                    </p>
-                </div>
-            </div>
-            <!-- end of program cart -->
-               <!-- cart area which needs to be in app.js  -->
-               <div class="program-carts-container">
-                <div class="program-cart cart-content">
-                    <img src="Resources/images/program_icon_05.png" alt="lecture">
-                    <span>Program</span>
-                    <p>A language that doesn’t affect the way you think about programming is not worth knowing.
-                    </p>
-                </div>
-            </div>
-            <!-- end of program cart -->
-               <!-- cart area which needs to be in app.js  -->
-               <div class="program-carts-container">
-                <div class="program-cart cart-content">
-                    <img src="Resources/images/program_icon_04.png" alt="lecture">
-                    <span>Lecture</span>
-                    <p>A language that doesn’t affect the way you think about programming is not worth knowing.
-                    </p>
-                </div>
-            </div>
-            <!-- end of program cart -->
-               <!-- cart area which needs to be in app.js  -->
-               <div class="program-carts-container">
-                <div class="program-cart cart-content">
-                    <img src="Resources/images/program_icon_02.png" alt="lecture">
-                    <span>Exercise</span>
-                    <p>A language that doesn’t affect the way you think about programming is not worth knowing.
-                    </p>
-                </div>
-            </div>
-            <!-- end of program cart -->
-               <!-- cart area which needs to be in app.js  -->
-               <div class="program-carts-container">
-                <div class="program-cart cart-content">
-                    <img src="Resources/images/program_icon_01.png" alt="lecture">
-                    <span>Confirm</span>
-                    <p>A language that doesn’t affect the way you think about programming is not worth knowing.
-                    </p>
-                </div>
-            </div>
-            <!-- end of program cart -->
-             <!-- join button for program in fastdevz -->
-           <div class="program-btn"><button type="button" onclick="programsRegistration()">Join Fastdevz Program</button></div>
-             <!-- end of the join button -->
-        </section>
-        <!-- end of  -->
-        <!-- start of future cart -->
-        <section id="featured-lecturas">
-           <div class="featured-lecturas-heading">
-            <h2>Featured Lecturas</h2>
-            <!-- lettel line  -->
-                <div class="line"></div>
-            <!-- end of lettel line  -->
-           </div>
-           <!-- feature carts here -->
-           <div class="featured-carts-container">
-               
-               <!-- end feature cars here -->
-           </div>
-            <!-- show more btn -->
-            <button type="button">MORE <img src="Resources/images/icons8-expand-arrow-50.png" alt=""></button>
-            <!-- end of show more btn-->
-        </section>
-        <footer id="partners">
-            <div class="forter-head">
-                <h2>Partners</h2>
-                <div class="line"></div>
-                <div class="partner-logos">
-                    <img src="Resources/images/Sony-logo.png" alt="sony logo">
-                    <img src="Resources/images/Intel-logo.png" alt="intel logo">
-                    <img src="Resources/images/AMD-logo.png" alt="amd-logo">
-                    <img src="Resources/images/Samsung-logo.png" alt="samsung logo">
-                    <img src="Resources/images/Qualcomm-logo.png" alt="Qualcomm logo">
-                </div>
-            </div>
-            <div class="footer-footer">
-                <img src="Resources/images/my-logo.png" alt="FASTDEVZ logo">
-                <P>
-                    FASTDEVZ(N.E.S.Engineers) @Copyright 2022
-                </P>
-            </div>
-        </footer>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Capstone Project</title>
+  </head>
+  <body>
+    <header>
+      <div class="topMenu">
+        <nav id="topNav">
+          <ul>
+            <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+            <li><a href="">English</a></li>
+            <li><a href="">My Page</a></li>
+            <li><a href="">Logout</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="mainMenu">
+        <div class="mainMenuCont">
+          <div class="logo">
+            <a href="index.html"><img src="Resources/images/my-logo.png" alt=""></a>
+          </div>
+          <i id="menuBtn" class="fas fa-bars fa-lg"></i>
+          <nav id="mainNav">
+            <i id="closeBtn" class="fas fa-times fa-lg"></i>
+            <ul>
+              <li><a class="aboutLink" href="about.html">About</a></li>
+              <li><a href="#mainProgram">Program</a></li>
+              <li><a href="#featuredSpeakers">Speakers</a></li>
+              <li><a href="#partners">Partners</a></li>
+              <li><button type="button" class="mainNavBtn">FASTDEVZ</button></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="heroCont">
+        <div class="mainHeading">
+          <h2>"Welcome To The World of Infinity Creations"</h2>
+          <h1><br>SOFTWARE IS A GREAT COMBINATION BETWEEN ARTISTRY AND ENGINEERING.<br>2022</h1>
+        </div>
+        <div class="message">
+          <p>
+            Excellent customer service is the number one job in any company! It is the personality of the company and the reason customers come back. Without customers there is no company. (the customer is king at fastdevz)
+          </p>
+        </div>
+        <div class="dateAndLocation">
+          <h2 class="date">Twelve (MON) ~ Sixteen (FRI)</h2>
+          <h4 class="location">@ Fastdevelopmentzone, At Cameroon,Yaounde.</h4>
+        </div>
+      </div>
+    </section>
+    <section class="mainProgram" id="mainProgram">
+      <div class="sectionCont">
+        <div class="sectionTitle">
+          <h2>Main Software Development Program</h2>
+          <hr>
+        </div>
+        <ul class="programList">
+          <li class="pListItem">
+            <div class="progIcon"><img src="./images/program_icon_01.png" alt="program-icon-01"></div>
+            <h3 class="progTitle">Mesages</h3>
+            <p class="progDescribtion">A language that doesn’t affect the way you think about programming is not worth knowing.</p>
+          </li>
+          <li class="pListItem">
+            <div class="progIcon"><img src="./images/program_icon_02.png" alt="program-icon-02"></div>
+            <h3 class="progTitle">Program</h3>
+            <p class="progDescribtion">A language that doesn’t affect the way you think about programming is not worth knowing.</p>
+          </li>
+          <li class="pListItem">
+            <div class="progIcon"><img src="./images/program_icon_03.png" alt="program-icon-03"></div>
+            <h3 class="progTitle">Lecture</h3>
+            <p class="progDescribtion">A language that doesn’t affect the way you think about programming is not worth knowing.</p>
+          </li>
+          <li class="pListItem">
+            <div class="progIcon"><img src="./images/program_icon_04.png" alt="program-icon-04"></div>
+            <h3 class="progTitle">Workshop</h3>
+            <p class="progDescribtion">A language that doesn’t affect the way you think about programming is not worth knowing.</p>
+          </li>
+          <li class="pListItem">
+            <div class="progIcon"><img src="./images/program_icon_05.png" alt="program-icon-05"></div>
+            <h3 class="progTitle">Exercise</h3>
+            <p class="progDescribtion">A language that doesn’t affect the way you think about programming is not worth knowing.</p>
+          </li>
+        </ul>
+        <a class="seeAllProg" href="">SEE THE WHOLE PROGRAM</a>>
+      </div>
+    </section>
+    <section class="featuredSpeakers" id="featuredSpeakers">
+      <div class="sectionCont" id="speakersCont">
+      </div>
+    </section>
+    <section class="partners" id="partners">
+      <div class="sectionCont">
+        <div class="sectionTitle">
+          <h2>Partners</h2>
+          <hr>
+        </div>
+        <div class="partnersImg">
+          <img class="partnerImg" src="./images/AMD-logo.png" alt="AMD logo">
+          <img class="partnerImg" src="./images/Intel-logo.png" alt="Intel logo">
+          <img class="partnerImg" src="./images/Qualcomm-logo.png" alt="Qualcomm logo">
+          <img class="partnerImg" src="./images/LG-logo.png" alt="LG logo">
+          <img class="partnerImg" src="./images/Sony-logo.png" alt="Sony logo">
+          <img class="partnerImg" src="./images/Samsung-logo.png" alt="Samsung logo">
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="sectionCont">
+        <img src="Resources/images/my-logo.png" alt="">
+        <p>FASTDEVZ(N.E.S.Engineers) @Copyright 2022</p>
+      </div>
+    </footer>
     <script src="js/app.js"></script>
-</body>
+  </body>
 </html>
