@@ -4,6 +4,7 @@
 
 > Description the project.
 >This project shows all my abilities as a software developer  and also as a frontEnd developer and this is my first capstone project,about a tech company called fastdevz.
+![Screenshot_17](https://user-images.githubusercontent.com/57832090/172023003-996b3699-121c-4568-b03d-3922c80c392f.png)
 
 ## Built With
 
