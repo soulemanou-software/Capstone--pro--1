@@ -13,7 +13,7 @@
     2. *css*
     3. *javascript*
 - Frameworks
-
+ some tricks
 - Technologies used
     1. *browser*
     2. *html,css,javascript *
