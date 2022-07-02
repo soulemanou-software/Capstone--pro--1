@@ -23,7 +23,7 @@
 
 [Live Demo Link](https://soulemanou-software.github.io/Capstone--pro--1/)
 ## Live video
-[video link here](https://youtu.be/-JPS8M1ka44)
+[video link here](https://www.youtube.com/watch?v=G2MRzD0JidE)
 
 ## Getting Started
 
